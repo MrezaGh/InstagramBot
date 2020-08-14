@@ -7,3 +7,6 @@ class InstaPyBot:
 
     def login(self):
         self.session.login()
+
+    def like_by_tag(self, tags, amount=5):
+        self.session.like_by_tags(tags, amount)
