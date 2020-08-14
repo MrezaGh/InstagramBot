@@ -16,3 +16,9 @@ class InstaPyBot:
 
     def block_tags(self, tags):
         self.session.set_dont_like(tags)
+
+    def comment(self, percentage, comments=None):
+        if not comments:
+            comments = ["Nice!", "Sweet!", "Beautiful :heart_eyes:"]
+        self.session.set_do_comment(True, percentage)
+        self.session.set_comments(comments)

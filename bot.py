@@ -8,6 +8,7 @@ bot.login()
 bot.like_by_tag(["bmw", "taylor_swift"])
 bot.block_tags(['nsfw', 'nude'])
 bot.follow(percentage=50)
+bot.comment(percentage=50)
 
 
 
