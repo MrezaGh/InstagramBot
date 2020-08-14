@@ -10,3 +10,6 @@ class InstaPyBot:
 
     def like_by_tag(self, tags, amount=5):
         self.session.like_by_tags(tags, amount)
+
+    def follow(self, percentage):
+        self.session.set_do_follow(True, percentage)
