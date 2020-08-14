@@ -13,3 +13,6 @@ class InstaPyBot:
 
     def follow(self, percentage):
         self.session.set_do_follow(True, percentage)
+
+    def block_tags(self, tags):
+        self.session.set_dont_like(tags)
